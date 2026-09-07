@@ -272,7 +272,7 @@ som.train_random(data_scaled, num_iteration=<span class="hl">1000</span>)</pre>
         </tbody>
       </table>
       <div class="flag">
-        <p>Se pierden dos centésimas de precisión y el error topográfico <strong>cae a la décima parte</strong>. En el mapa corregido las fronteras se leen como <strong>bandas continuas</strong> en lugar de manchas sueltas.</p>
+        <p>Se pierden dos centésimas de precisión y el error topográfico <strong>cae a la décima parte</strong>.</p>
       </div>
       <p class="sub" style="margin-top:10px">Sin medir el error topográfico, este problema es invisible: el QE nunca lo hubiera delatado.</p>
     </div>
@@ -293,7 +293,7 @@ som.train_random(data_scaled, num_iteration=<span class="hl">1000</span>)</pre>
       <p>Un mapa por variable: la misma grilla, coloreada según el valor de <strong>esa</strong> componente en cada uno de los 100 prototipos.</p>
       <ul>
         <li><strong>Extracción:</strong> los 100 prototipos son características nuevas y comprimidas. Pasamos de 210×7 a un resumen de 100 vectores.</li>
-        <li><strong>Selección:</strong> <code>area</code>, <code>perimeter</code>, <code>len_kernel</code> y <code>len_groove</code> tienen <strong>el mismo degradé</strong>. Son la misma información cuatro veces: se pueden descartar.</li>
+        <li><strong>Selección:</strong> <code>area</code>, <code>perimeter</code>, <code>len_kernel</code>, <code>width_kernel</code> y <code>len_groove</code> tienen <strong>el mismo degradé</strong>. Son la misma información cinco veces: se pueden descartar.</li>
       </ul>
       <div class="flag v">
         <p>Es la misma conclusión a la que llegó la matriz de correlación de la lámina 3.</p>
